@@ -1,0 +1,146 @@
+form{
+    border: solid;
+    padding:15px; 
+    border-color: darkred;
+    background-color: #F8F9F9   ;
+}
+
+ul form button{
+    width: 190px;
+}
+
+ul form{
+    border: none;
+    padding: 0;
+    background-color: black;
+}
+
+label, .btn{
+    font-weight: bold;
+}
+
+.dropdown-menu li a{
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+header.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    color: white;
+    background:linear-gradient(to left, #7b4397, #dc2430);
+  }
+  header.masthead .header-content {
+    max-width: 500px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  header.masthead .header-content h1 {
+    font-size: 30px;
+    text-align: justify;
+  }
+  header.masthead .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  header.masthead .device-container .screen img {
+    border-radius: 3px;
+  }
+
+  /*LOGIN*/
+section{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
+    filter: hue-rotate(120deg);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate
+{
+  0%
+  {
+      filter: hue-rotate(0deg);
+  }
+  100%
+  {
+      filter: hue-rotate(360deg);
+  }
+}
+
+#formm{
+  border:none;
+  background: transparent;
+}
+
+#mibox
+{
+    position: relative;
+    padding: 50px;
+    width: 360px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+#mibox::after
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 15%, transparent 50%, transparent 85%, rgba(255,255,255,0.3) 100%);
+}
+
+#mibox #miform
+{
+    position: relative;
+    width: 100%;
+}
+
+#mibox #miform h2
+{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#mibox #miform .inputBx
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#mibox #miform .inputBx input
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    padding: 10px 10px;
+    border-radius: 6px;
+    color: #fff;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2)
+}
+
+#mibox #miform .inputBx input::placeholder
+{
+    color: #fff;
+}

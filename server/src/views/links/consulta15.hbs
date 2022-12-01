@@ -1,0 +1,34 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 15</h5>
+    <h5>
+        Desplegar los países cuya población sea mayor a la población de los
+        países centroamericanos juntos.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+        <th scope="col">PAIS</th>
+        <th scope="col">POBLACION</th>
+        <th scope="col">REGION</th>
+        <th scope="col">POBLACION CENTROAMERICANA</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{pais}}</th>
+                <td>{{poblacion}}</td>
+                <td>{{region}}</td> 
+                <td>{{poblacion_centroamerica}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

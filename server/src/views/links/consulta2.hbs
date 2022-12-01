@@ -1,0 +1,31 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 2</h5>
+    <h5>
+        Desplegar los países de cada continente y el número de preguntas que han
+        contestado decualquier encuesta. Si hay países que no han contestado
+        ninguna encuesta, igual debe aparecer su nombre el la lista.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+        <th scope="col">PAIS</th>
+        <th scope="col">NUMERO DE PREGUNTAS CONTESTADAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{pais}}</th>
+                <td>{{total}}</td>        
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

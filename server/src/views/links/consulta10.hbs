@@ -1,0 +1,36 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 10</h5>
+    <h5>
+        Desplegar el nombre de todos los inventores que Inicien con B y terminen con r o
+        con n que tengan inventos del siglo 19.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+        <th scope="col">INVENTOR</th>
+        <th scope="col">INVENTO</th>
+        <th scope="col">ANIO</th>
+        <th scope="col">LETRA INICIAL</th>
+        <th scope="col">LETRA FINAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{inventor}}</th>
+                <td>{{invento}}</td>
+                <td>{{anio}}</td> 
+                <td>{{letra_inicial}}</td>
+                <td>{{letra_final}}</td>       
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

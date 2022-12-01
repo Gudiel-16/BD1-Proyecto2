@@ -1,0 +1,31 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 12</h5>
+    <h5>
+        Desplegar todos los inventos de cuatro letras que inicien con L.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">INVENTO</th>
+            <th scope="col">TAMANIO</th>
+            <th scope="col">LETRA INICIAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{invento}}</th>
+                <td>{{tamanio}}</td>
+                <td>{{letra_inicial}}</td> 
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,36 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 16</h5>
+    <h5>
+        Desplegar todos los Jefes de cada profesional que no este en el mismo
+        departamento que el del profesional que atiende al inventor Pasteur.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">PROFESIONAL</th>
+            <th scope="col">INVENTO</th>
+            <th scope="col">AREA</th>
+            <th scope="col">JEFE</th>
+            <th scope="col">JEFE GENERAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{profesional}}</th>
+                <td>{{invento}}</td>
+                <td>{{area}}</td> 
+                <td>{{jefe}}</td>
+                <td>{{jefe_gen}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

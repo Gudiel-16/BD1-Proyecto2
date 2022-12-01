@@ -1,0 +1,31 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 1</h5>
+    <h5>
+        Desplegar cada profesional, y el número de inventos que tiene asignados
+        ordenados de mayor a menor.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">NUMERO DE INVENTOS</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{profesional}}</th>
+                <td>{{inventos_asignados}}</td>        
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>
+

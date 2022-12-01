@@ -1,0 +1,34 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 5</h5>
+    <h5>
+        Desplegar todos los profesionales, y su salario cuyo salario es mayor al
+        promedio del salario de los profesionales en su misma área.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+        <th scope="col">PROFESIONAL</th>
+        <th scope="col">SALARIO</th>
+        <th scope="col">AREA</th>
+        <th scope="col">SALARIO PROMEDIO</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{profesional}}</th>
+                <td>{{salario}}</td>
+                <td>{{area}}</td> 
+                <td>{{salario_promedio}}</td>        
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

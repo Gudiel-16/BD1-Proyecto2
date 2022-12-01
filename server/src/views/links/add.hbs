@@ -1,0 +1,147 @@
+{{!--<div class="container p-4">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <form action="/links/add" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="nombre" placeholder="USUARIO"
+                                        autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="pass" class="form-control" placeholder="PASSWORD">
+                                </div>
+                                <div class="input-group">
+                                    <button class="btn-success btn-block">REGISTRAR</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form action="/links/inisesion" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="nombre" placeholder="USUARIO"
+                                        autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="pass" class="form-control" placeholder="PASSWORD">
+                                </div>
+                                <div class="input-group">
+                                    <button class="btn-success btn-block">INICIAR SESION</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>--}}
+{{!--
+<div class="container p-4" id="sect">
+    <div class="row">
+        <div class="col-md-9 mx-auto">
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="container" style="width: 350px; margin-top: 30px; background-color: #F1C40F;;">
+                        <form action="/links/add" method="POST"
+                            style="padding: 35px; border:none; background-image: url(https://images4.alphacoders.com/495/49586.jpg);">
+                            <div class="card text-center" style="background-color: #F1C40F;">
+                                <div class="card-body" style="background-color: #F1C40F;">
+                                    <img src="https://cdn1.iconfinder.com/data/icons/users-and-groups/38/user-group-add-512.png"
+                                        class="img-fluid" alt="" style="height: 120px; width: 130px;">
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding-top: 10px;">
+                                <label for="exampleInputEmail1" style="color: white;">USUARIO</label>
+                                <input type="text" autocomplete="off" class="form-control" name="nombre"
+                                    placeholder="USUARIO" autofocus>
+                                <small id="emailHelp" class="form-text text-muted" style="color: white;">Nunca
+                                    compartiremos sus datos con nadie más.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" style="color: white;">PASSWORD</label>
+                                <input type="password" name="pass" class="form-control" placeholder="PASSWORD">
+                            </div>
+                            <div class="form-group" style="text-align: center; margin-top: 30px;">
+                                <button class="btn btn-outline-warning btn-block">REGISTRARSE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container" style="width: 350px; margin-top: 30px; background-color: #F1C40F;">
+                        <form action="/links/inisesion" method="POST"
+                            style="padding: 35px; border:none; background-image: url(https://images4.alphacoders.com/495/49586.jpg);">
+                            <div class="card text-center" style="background-color: #F1C40F;">
+                                <div class="card-body" style="background-color: #F1C40F;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Crystal_Clear_app_Login_Manager.svg/1200px-Crystal_Clear_app_Login_Manager.svg.png"
+                                        class="img-fluid" alt="" style="height: 120px; width: 130px;">
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding-top: 10px;">
+                                <label for="exampleInputEmail1" style="color: white;">USUARIO</label>
+                                <input type="text" autocomplete="off" class="form-control" name="nombre"
+                                    placeholder="USUARIO" autofocus>
+                                <small id="emailHelp" class="form-text text-muted" style="color: white;">Nunca
+                                    compartiremos sus datos con nadie más.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" style="color: white;">PASSWORD</label>
+                                <input type="password" name="pass" class="form-control" placeholder="PASSWORD">
+                            </div>
+                            <div class="form-group" style="text-align: center; margin-top: 30px;">
+                                <button class="btn btn-outline-warning btn-block">INICIAR SESION</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+--}}
+
+<section>
+    <div class="box" id="mibox">
+        <div class="form" id="miform">
+            <h2>REGISTRARSE</h2>
+            <form id="formm" action="/links/add" method="POST">
+                <div class="inputBx">
+                    <div class="form-group" style="padding-top: 10px;">
+                        <input type="text" autocomplete="off" class="form-control" name="nombre" placeholder="USUARIO">
+                    </div>
+                </div>
+                <div class="inputBx">
+                    <div class="form-group">
+                        <input type="password" name="pass" class="form-control" placeholder="PASSWORD">
+                    </div>
+                </div>
+                <div class="inputBx" style="text-align: center;">
+                    <button class="btn btn-outline-warning btn-block">REGISTRARSE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="box" id="mibox">
+        <div class="form" id="miform">
+            <h2>SIGN IN</h2>
+            <form id="formm" action="/links/inisesion" method="POST">
+                <div class="inputBx">
+                    <div class="form-group" style="padding-top: 10px;">
+                        <input type="text" autocomplete="off" class="form-control" name="nombre" placeholder="USUARIO" autofocus>
+                    </div>
+                </div>
+                <div class="inputBx">
+                    <div class="form-group">
+                        <input type="password" name="pass" class="form-control" placeholder="PASSWORD">
+                    </div>
+                </div>
+                <div class="inputBx" style="text-align: center;">
+                    <button class="btn btn-outline-warning btn-block">INICIAR SESION</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

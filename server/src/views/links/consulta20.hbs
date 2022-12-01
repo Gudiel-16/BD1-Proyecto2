@@ -1,0 +1,34 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 20</h5>
+    <h5>
+        Desplegar el nombre del profesional su salario y su comisión de los empleados
+        cuyo salario es mayor que el doble de su comisión.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+        <th scope="col">PROFESIONAL</th>
+        <th scope="col">SALARIO</th>
+        <th scope="col">COMISION</th>
+        <th scope="col">COMISION DOBLE</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{nombre}}</th>
+                <td>{{salario}}</td>
+                <td>{{comision}}</td> 
+                <td>{{comision_doble}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

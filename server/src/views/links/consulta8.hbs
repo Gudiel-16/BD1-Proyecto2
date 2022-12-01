@@ -1,0 +1,30 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 8</h5>
+    <h5>
+        Desplegar la suma del área de todos los países agrupados por la inicial de su
+        nombre.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+        <th scope="col">LETRA</th>
+        <th scope="col">AREA TOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{letra}}</th>
+                <td>{{area_total}}</td>        
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,32 @@
+{{> navigation}}
+
+<div class="container" style="color:darkred; margin-top: 20px;">
+    <h5>CONSULTA 7</h5>
+    <h5>
+        Desplegar los inventos documentados por todos los profesionales expertos en
+        Óptica.
+    </h5>
+</div>
+
+<div class="container pd-4" style="margin-top: 5px;">
+
+    <table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">PROFESIONAL</th>
+            <th scope="col">INVENTO</th>
+            <th scope="col">AREA</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each result}}
+            <tr>            
+                <th scope="row">{{profesional}}</th>
+                <td>{{invento}}</td>
+                <td>{{area}}</td> 
+            </tr>
+        {{/each}}
+    </tbody>
+    </table>
+
+</div>
